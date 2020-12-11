@@ -25,6 +25,16 @@ export interface SkinViewerOptions {
 	cape?: RemoteImage | TextureSource;
 
 	/**
+	*	Adjusting the direction of the camera when you render
+	*/
+	perspective?: {
+		x?: number,
+		y?: number,
+		z?: number,
+		depth: number
+	};
+
+	/**
 	 * Whether the canvas contains an alpha buffer. Default is true.
 	 * This option can be turned off if you use an opaque background.
 	 */
@@ -80,10 +90,13 @@ class SkinViewer {
 
 		this.scene = new Scene();
 
+		const { x, y, z, depth } = options.perspective || {}
+
 		// Use smaller fov to avoid distortion
-		this.camera = new PerspectiveCamera(40);
-		this.camera.position.y = -8;
-		this.camera.position.z = 60;
+		this.camera = new PerspectiveCamera(depth ?? 40);
+		this.camera.position.y = y ?? -8;
+		this.camera.position.z = z ?? 60;
+		this.camera.position.x = x ?? 0;
 
 		this.renderer = new WebGLRenderer({
 			canvas: this.canvas,

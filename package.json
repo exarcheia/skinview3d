@@ -1,6 +1,6 @@
 {
-	"name": "skinview3d",
-	"version": "2.0.0-beta.1",
+	"name": "exarcheia-skinview3d",
+	"version": "2.0.1",
 	"description": "Three.js powered Minecraft skin viewer",
 	"main": "libs/skinview3d.js",
 	"type": "module",
@@ -19,20 +19,21 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/bs-community/skinview3d.git"
+		"url": "https://github.com/exarcheia/skinview3d"
 	},
 	"author": "Haowei Wen <yushijinhun@gmail.com> (https://github.com/yushijinhun)",
 	"contributors": [
 		"Sean Boult <hacksore@mcskinsearch.com> (https://github.com/Hacksore)",
 		"Pig Fang <g-plane@hotmail.com> (https://github.com/g-plane)",
 		"printempw <h@prinzeugen.net> (https://github.com/printempw)",
-		"Kent Rasmussen <hyprkookeez@gmail.com> (https://github.com/earthiverse)"
+		"Kent Rasmussen <hyprkookeez@gmail.com> (https://github.com/earthiverse)",
+		"Aries <anton98767@gmail.com> (https://github.com/Two-Faces)"
 	],
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/bs-community/skinview3d/issues"
+		"url": "https://github.com/exarcheia/skinview3d/issues"
 	},
-	"homepage": "https://github.com/bs-community/skinview3d",
+	"homepage": "https://github.com/exarcheia/skinview3d",
 	"files": [
 		"libs",
 		"bundles"
